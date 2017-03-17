@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Desktop/Messenger/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/anuragmaravi/Desktop/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_22fde11955885ad974005ee4b41e1c32360b5c10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Desktop/Messenger/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c219b2024377f8b725d5dea719a2bb521d13474c">
+        <dex dex="/Users/anuragmaravi/Desktop/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_efd84ba88055feb9a085bca98c85450a1ec5e539/classes.dex" />
+    </item>
+
+</items>

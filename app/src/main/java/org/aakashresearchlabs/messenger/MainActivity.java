@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_profile:
                     fragment = new ProfileFragment();
                     break;
+                default:
+                    fragment = new GroupsFragment();
+                    break;
             }
             final FragmentTransaction transaction = fragmentManager.beginTransaction();
             transaction.replace(R.id.container, fragment).commit();

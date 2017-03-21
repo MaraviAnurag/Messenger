@@ -49,7 +49,7 @@ public class DocumentsFragment extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-<<<<<<< HEAD
+
        setHasOptionsMenu(true);
         View v=inflater.inflate(R.layout.fragment_documents, container, false);
         recyclerView=(RecyclerView)v.findViewById(R.id.recyclerview);
@@ -172,8 +172,6 @@ public class DocumentsFragment extends Fragment {
             subjectAdapter.notifyDataSetChanged();
 
         }
-=======
-        return inflater.inflate(R.layout.fragment_documents, container, false);
 
         /*ToDo: Add a recyclerView for documents
         Download documents
@@ -181,7 +179,6 @@ public class DocumentsFragment extends Fragment {
         View Documents
          */
 
->>>>>>> origin/master
     }
 }
 

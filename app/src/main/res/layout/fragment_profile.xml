@@ -3,11 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="org.aakashresearchlabs.messenger.MainActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="12dp"
+            android:id="@+id/imageCard"
+            app:cardCornerRadius="71dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2.0"
+            android:layout_marginTop="96dp">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/imageView1"
+                android:src="@drawable/profile_test"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center">
+            </ImageView>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tom Cruise"
+            android:textSize="24sp"
+            android:textColor="#111"
+            android:layout_below="@id/imageCard"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
 </FrameLayout>

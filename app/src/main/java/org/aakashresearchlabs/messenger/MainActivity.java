@@ -8,11 +8,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.Window;
 
 public class MainActivity extends AppCompatActivity {
 
     private Fragment fragment;
     private FragmentManager fragmentManager;
+
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -36,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             final FragmentTransaction transaction = fragmentManager.beginTransaction();
             transaction.replace(R.id.container, fragment).commit();
             return true;
-            //Commit
         }
 
     };
@@ -44,12 +46,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         fragmentManager = getSupportFragmentManager();
 
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //TextView Title = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        //setSupportActionBar(toolbar);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+
+        BottomNavigationView bottomNav=(BottomNavigationView)findViewById(R.id.navigation);
     }
 
 }

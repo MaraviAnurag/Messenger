@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/groupcardview"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="100dp"
+    card_view:cardBackgroundColor="#bbb"
+    card_view:cardElevation="5dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/cardLayoutGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_marginLeft="12dp"
+    android:layout_centerVertical="true"
+    android:background="@drawable/group_icon">
+</RelativeLayout>
+
+        <TextView
+            android:text="Group Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GroupName"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

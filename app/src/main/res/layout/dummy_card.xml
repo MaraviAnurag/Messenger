@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:id="@+id/subjectCard"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_margin="10dp"
+       android:padding="10dp"
+       android:layout_height="wrap_content">
+
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subjectName"
+      android:maxLines="1"
+      android:ellipsize="end"
+        android:text="Subject Name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@+id/subjectName"
+        android:id="@+id/fileName"
+        android:text="File Name"/>
+   </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

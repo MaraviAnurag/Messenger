@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2577b55ec5e51ca2f635f12ef99033287a30527e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/anuragmaravi/.android/build-cache/c4ad9a1881d72da2678272406a2dce6ba46c4eb6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b868b833b0887aa48c4e581558eef4f1196f6a2">
+        <dex dex="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5b5ede2d8f2de4ac7d6b6f3546ee2dc85149c06a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="37ec5631b1af36c6a944efb1ce2ae5151f819ca6">
+        <dex dex="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_22300af497e18e30e279b11d311cc7894557dac6/classes.dex" />
+    </item>
+
+</items>

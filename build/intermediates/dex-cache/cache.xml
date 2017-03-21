@@ -2,139 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\951a95c78546faa4e07c756348d2ab23aae06fa3\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4b868b833b0887aa48c4e581558eef4f1196f6a2">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_0a5e16f18b331b457ccd281020d671ea38b5a339.jar" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2577b55ec5e51ca2f635f12ef99033287a30527e/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\b88e523fdea3ce2fc606b68b80c325281669dc09\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_4795306a858a8cab4ece98b49e09baec9cf09308.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\5888fb1c6acec4db4bce90041c3a990043ddf509\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_b7ea9dc836d57382ccc1c2166fb44f670cc987d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\42dfd1e22133b5873b1ae70dbb4f03484315c518\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_c43b0c4b9f9d97f2fef96f521e29dbeb31290de4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\4b55e9fbdd9c7320dd212ab1089c9eee7c99f7ab\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_7d675645dd7f4016464be43d625a30abd22a5f4b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\4d8183032689de569e23abf667f5b488b41a4d73\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_e0d471bd312b576a29c7ed85a51a917b476f0c39.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\0249f1112800b07c9b3d673bc4dcbb28c6d0079f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e51c2f662bb72419632af5192553c37e33890a99">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_c7421e323edf755cfd415d04ad599b99f320ecfa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\66b7385840039f4c3a0db6afe4960221c7481b50\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_72b4a05e6d514a55b42c0137684b92289b9dac4d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\08d56267f3e37a7e962d5f12dc17761e65a0aa43\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_551a4600d89df5a1d0add3e6b361eb9f1bd43d69.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\84f0cf477718281e3028613e0156326372ee575c\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_b446b1c575477102135dbd41fb55bfd2c5738e06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\fc7c52b8e0c6b7f84c51ae29bb5061b27597e7e6\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_631f701d27be9c562ee7b46dbc34436177f6490e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\28e7c85d9dc126b7ed24e20587884a4851931b28\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_e85717bab3def461463c0eef911d8fa0a99e9f5f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\20e25bb6ce0541ed8f261ac195878d215964eff7\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_281df61a0b973b3062bdc6ccf3df695e0758331d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Android\.android\build-cache\9e98b61cddb28def8727a43fc4bbc7ae1d874e40\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\classes_0f3b114e5b1e3225333011a7f66fc1d7c91b5b65.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Snehit Sagi\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_0d3a0f3eed3997e781f68e35071fdeea6eb6cc38.jar" />
+        sha1="8e7e802e2bf3abeafc8b2a96d40776708e36fead">
+        <dex dex="/Users/anuragmaravi/Documents/Android/Android Projects/Messenger/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_22300af497e18e30e279b11d311cc7894557dac6/classes.dex" />
     </item>
 
 </items>

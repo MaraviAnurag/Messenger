@@ -7,10 +7,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -52,7 +56,16 @@ public class DocumentsFragment extends Fragment {
 
        setHasOptionsMenu(true);
         View v=inflater.inflate(R.layout.fragment_documents, container, false);
+        Toolbar documentsToolbar=(Toolbar)v.findViewById(R.id.tool_documents);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(documentsToolbar);
         recyclerView=(RecyclerView)v.findViewById(R.id.recyclerview);
+        Spinner spinnerCardFilter=(Spinner)v.findViewById(R.id.spinnerCardFilter);
+        String filterOptions[] ={"Date","Size","dfsdf"};
+
+        ArrayAdapter spinnerAdapter=new ArrayAdapter(getActivity(),android.R.layout.simple_spinner_item,filterOptions);
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerCardFilter.setAdapter(spinnerAdapter);
+
         recyclerView.setHasFixedSize(true);
         layoutmanager=new StaggeredGridLayoutManager(3,1);
         recyclerView.setLayoutManager(layoutmanager);
@@ -99,7 +112,7 @@ public class DocumentsFragment extends Fragment {
             ArrayAdapter spinnerAdapter=new ArrayAdapter(getActivity(),android.R.layout.simple_spinner_item,spinnerArray);
             spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             subject_spinner.setAdapter(spinnerAdapter);
-        ;
+
 
 
 
@@ -179,6 +192,13 @@ public class DocumentsFragment extends Fragment {
         View Documents
          */
 
+
+
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.documents_menu,menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 }
 

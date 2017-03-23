@@ -12,11 +12,8 @@ import android.view.Window;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Fragment fragment;
+    private Fragment fragment,fragme;
     private FragmentManager fragmentManager;
-
-
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -52,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         fragmentManager = getSupportFragmentManager();
-
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        fragme = new DocumentsFragment();
+        final FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.container, fragme).commit();
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //TextView Title = (TextView) toolbar.findViewById(R.id.toolbar_title);
         //setSupportActionBar(toolbar);
         //getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-
-        BottomNavigationView bottomNav=(BottomNavigationView)findViewById(R.id.navigation);
     }
 
 }

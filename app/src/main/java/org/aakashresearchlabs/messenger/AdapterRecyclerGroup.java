@@ -49,6 +49,7 @@ public class AdapterRecyclerGroup extends RecyclerView.Adapter<AdapterRecyclerGr
             @Override
             public void onClick(View view) {
                 Intent chatRoomIntent =new Intent(groupContext,chatRoom.class);
+                chatRoomIntent.putExtra("position",GroupNameSet[position]);
                 groupContext.startActivity(chatRoomIntent);
             }
         });

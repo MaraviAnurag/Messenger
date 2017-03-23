@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chatRoom" />
+        <activity android:name=".chatRoom"
+            android:theme="@style/AppTheme1"/>
         <activity android:name=".announcements"></activity>
     </application>
 

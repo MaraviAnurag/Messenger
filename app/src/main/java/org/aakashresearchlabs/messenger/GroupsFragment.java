@@ -46,7 +46,7 @@ public class GroupsFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
+            int id = item.getItemId();
         if(id==R.id.action_announcements)
         {
             Intent announce_int=new Intent(getActivity(),announcements.class);

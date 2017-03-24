@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eafd2e712be35588de3bdb8ef113f0921b6a886b">
+        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_17f826d203e9555b09611dd0d2af26a20c60e61c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0f3971bf3ec03ae99a916cb2ff3731354147a996\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1db7b6fa65e99e30645f74983aa16ad9d0d37958">
-        <dex dex="C:\Users\Snehit Sagi\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a686c71ba8a9f72bcbaa52f17ec9b2f98d873db2\classes.dex" />
+        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_595ea290256b10f2abbdb844f7b0c404390c7dc3\classes.dex" />
     </item>
 
 </items>

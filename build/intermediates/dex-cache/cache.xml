@@ -2,22 +2,112 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\43681b7059ae43acd86821be5b1e243b612cf583\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="eafd2e712be35588de3bdb8ef113f0921b6a886b">
-        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_17f826d203e9555b09611dd0d2af26a20c60e61c\classes.dex" />
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_00d3e697074a619571d7c44c9e0330516ea6f048.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\ea7627a64a7a5070a16939fa653c9da3b754724b\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_595ea290256b10f2abbdb844f7b0c404390c7dc3\classes.dex" />
+        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_e641cfe096c503283d369d00287873b48c8183fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\5d0a98639e9209374642d70d54689621c7a3ad3c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94fca868854457ede6df15c902938468c71d579e">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_a458949c6a182e4521dc189deb9842cd857afee5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\a2d034836ee5679e3f6661d7f9bd69c66c4e6bc2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_ca16413bd9a1f84cbbd6abd8df9f78125b4cf2c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\0635ac5beb7ed19e7245d7bca1bbb8a3b9a3e8d2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_5021881f1d0af908842e463dce07aa05feeb0754.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\72b1b2c3d752e561bf43b2a6443e53cc275bde55\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_07ac0ed36a503c17c91a848c5d0d648ed73f216c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\ee3f6f378aea75804ecf3663598748701713b6e9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_7de5f878ab3768e1f6fddb7439e05555e47542dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\d9c6665fccb71a3fa9e922c5c3deb30b1753a0a2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_36ac95413b7829096d13314c6044adf31f0ae023.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\eb4642f538db855b379827a05d692df86218fc3f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_d283bd6e3570a56686597440bc8f1cd120875b15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\bed3909b905f0cf36faad248ee0af479f37465ff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_176f4a844615ab73e28ec8ec3a579f5245c56b33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\7695b8fbbc9a0f72c4d63a3254b6423a62c6abbf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_b6845d9658f49cdd61f6d2e67bace283e670a7ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kevin\.android\build-cache\312b4f3acaabeb7d4d2d87f3208c43b9b57ab27f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\pre-dexed\debug\classes_1f353c7c67817c8217c1b4a562775195275fd238.jar" />
     </item>
 
 </items>

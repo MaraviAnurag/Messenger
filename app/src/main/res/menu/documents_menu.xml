@@ -4,7 +4,7 @@
     <item
         android:id="@+id/action_announcements"
         android:orderInCategory="50"
-        android:title="Announcements"
+        android:title="Filter"
         android:icon="@drawable/ic_sort_white_24dp"
         app:showAsAction="always"/>
 </menu>

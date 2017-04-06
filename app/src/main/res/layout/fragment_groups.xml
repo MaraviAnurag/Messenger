@@ -19,9 +19,9 @@
             android:title="MESSENGER"
             app:titleTextColor="#fff" />
     </android.support.design.widget.AppBarLayout>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewGroups"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/groupsToolbar"/>
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/listView"
+       android:layout_below="@+id/groupsToolbar"/>
 </RelativeLayout>

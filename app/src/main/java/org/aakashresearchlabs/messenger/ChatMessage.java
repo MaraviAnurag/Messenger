@@ -4,12 +4,13 @@ package org.aakashresearchlabs.messenger;
  * Created by Snehit Sagi on 22-Mar-17.
  */
 
-public class ChatMessage {
+public class    ChatMessage {
     private long id;
     private boolean isMe;
     private String message;
     private Long userId;
     private String dateTime;
+    private String user;
 
     public long getId() {
         return id;
@@ -28,6 +29,9 @@ public class ChatMessage {
     }
     public void setMessage(String message) {
         this.message = message;
+    }
+    public void setUser(String user) {
+        this.user = user;
     }
     public long getUserId() {
         return userId;

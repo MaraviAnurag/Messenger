@@ -1,63 +1,73 @@
 package org.aakashresearchlabs.messenger;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Created by Snehit Sagi on 20-Mar-17.
+ * Created by HARSHIT on 20-Mar-17.
  */
 
-public class AdapterRecyclerGroup extends RecyclerView.Adapter<AdapterRecyclerGroup.MyViewHolder> {
+public class AdapterRecyclerGroup extends ArrayAdapter<String>{
+    Context context;
+    int layoutResourceId;
+    List<String> data = new ArrayList<>();
 
-    private String[] GroupNameSet;
-    Context groupContext;
-
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-        public CardView groupCardView;
-        public TextView groupnametextview;
-
-        public MyViewHolder(View v) {
-            super(v);
-            groupCardView = (CardView) v.findViewById(R.id.groupcardview);
-            groupnametextview = (TextView) v.findViewById(R.id.GroupName);
-        }
+    public AdapterRecyclerGroup(Context context, int layoutResourceId, List<String> data) {
+        super(context,layoutResourceId,data);
+        this.layoutResourceId = layoutResourceId;
+        this.context = context;
+        this.data = data;
     }
+    public View getView(int position,View convertView,ViewGroup parent)
+    {
+        View row = convertView;
+        GroupHolder holder = null;
+        if(row == null)
+ {
+ LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+ row = inflater.inflate(layoutResourceId, parent, false);
 
-    public AdapterRecyclerGroup(String[] myGroupNameSet, Context context) {
-        GroupNameSet = myGroupNameSet;
-        this.groupContext = context;
-    }
-
-    @Override
-    public AdapterRecyclerGroup.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.groupcard, parent, false);
-        MyViewHolder vh = new MyViewHolder(v);
-        return vh;
-    }
-
-    @Override
-    public void onBindViewHolder(final MyViewHolder holder, final int position) {
-      holder.groupnametextview.setText(GroupNameSet[position]);
-        holder.groupCardView.setOnClickListener(new View.OnClickListener() {
+ holder = new GroupHolder();
+ holder.txtTitle = (TextView)row.findViewById(R.id.GroupName);
+holder.cardView=(CardView)row.findViewById(R.id.groupcardview);
+ row.setTag(holder);
+ }
+ else
+ {
+ holder = (GroupHolder)row.getTag();
+ }
+ final String title = data.get(position);
+ holder.txtTitle.setText(title);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent chatRoomIntent =new Intent(groupContext,chatRoom.class);
-                chatRoomIntent.putExtra("position",GroupNameSet[position]);
-                groupContext.startActivity(chatRoomIntent);
+            public void onClick(View v) {
+                Intent intent = new Intent(context,chatRoom.class);
+                intent.putExtra("user_name","hul");
+                intent.putExtra("room_name",title);
+                context.startActivity(intent);
             }
         });
-    }
+ return row;
 
-    @Override
-    public int getItemCount() {
-        return GroupNameSet.length;
     }
-
+    static class GroupHolder
+ {
+TextView txtTitle;
+     CardView cardView;
+}
 }

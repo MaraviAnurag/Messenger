@@ -9,8 +9,9 @@ public class    ChatMessage {
     private boolean isMe;
     private String message;
     private Long userId;
-    private String dateTime;
+//    private String dateTime;
     private String user;
+    private String timestamp;
 
     public long getId() {
         return id;
@@ -41,11 +42,11 @@ public class    ChatMessage {
         this.userId = userId;
     }
 
-    public String getDate() {
-        return dateTime;
+    public String getTimestamp() {
+        return timestamp;
     }
 
-    public void setDate(String dateTime) {
-        this.dateTime = dateTime;
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 }

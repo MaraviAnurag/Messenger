@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.text.format.DateUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,12 +19,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 public class chatRoom extends AppCompatActivity {
@@ -96,6 +94,9 @@ public class chatRoom extends AppCompatActivity {
                     Map<String, Object> map2 = new HashMap<String, Object>();
                     map2.put("name", user_name);
                     map2.put("msg", messageText);
+                    Date date = new Date();
+                    String str = String.valueOf(DateUtils.getRelativeDateTimeString(chatRoom.this,date.getTime(),DateUtils.DAY_IN_MILLIS,DateUtils.WEEK_IN_MILLIS,0));
+                    map2.put("timestamp",str);
                     message_root.updateChildren(map2);
                 }
 //                ChatMessage chatMessage = new ChatMessage();
@@ -164,7 +165,7 @@ public class chatRoom extends AppCompatActivity {
             msg.setMe(true);
             msg.setMessage((String) ((DataSnapshot) i.next()).getValue());
             msg.setUser((String)((DataSnapshot)i.next()).getValue());
-            msg.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+            msg.setTimestamp(((DataSnapshot) i.next()).getValue().toString());
             chatHistory.add(msg);
             flag++;
         }

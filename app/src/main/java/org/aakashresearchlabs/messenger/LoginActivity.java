@@ -14,18 +14,28 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
+    private DatabaseReference database;
     //private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
+    private String email=null;
+    private String password=null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
+        database=FirebaseDatabase.getInstance().getReference();
 
         if (auth.getCurrentUser() != null) {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
@@ -60,8 +70,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = inputEmail.getText().toString();
-                final String password = inputPassword.getText().toString();
+                email = inputEmail.getText().toString();
+                password = inputPassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
@@ -92,9 +102,29 @@ public class LoginActivity extends AppCompatActivity {
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                                    finish();
+                                    FirebaseUser user = auth.getCurrentUser();
+                                    if(!user.isEmailVerified())
+                                        Toast.makeText(LoginActivity.this, "Please complete email verification.", Toast.LENGTH_SHORT).show();
+                                    else {
+                                        database.addValueEventListener(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                                String s = dataSnapshot.child("usersdetails").child(inputEmail.getText().toString()).getValue(String.class);
+                                                Toast.makeText(LoginActivity.this, "Welcome " + s, Toast.LENGTH_SHORT).show();
+
+                                                //Toast.makeText(LoginActivity.this, "User verification" + user.isEmailVerified(), Toast.LENGTH_SHORT).show();
+                                            }
+
+                                            @Override
+                                            public void onCancelled(DatabaseError databaseError) {
+
+                                            }
+                                        });
+                                        Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                        finish();
+                                    }
+
                                 }
                             }
                         });

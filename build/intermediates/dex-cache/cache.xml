@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\harshit\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6d95b39d4b86ae08ce02151d0650dda0a3a6d18e">
-        <dex dex="C:\Users\harshit\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0c442046f6c9d848b84efae329b080c463000630\classes.dex" />
+        sha1="68effe05d480f580b0a2636ab9022c3e459b3391">
+        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_17f826d203e9555b09611dd0d2af26a20c60e61c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\harshit\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\Users\harshit\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2d3754f56229e26ce4c32c0daaf8ae41faf8fc1f\classes.dex" />
+        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_595ea290256b10f2abbdb844f7b0c404390c7dc3\classes.dex" />
     </item>
 
 </items>

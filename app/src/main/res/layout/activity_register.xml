@@ -16,7 +16,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp"
         android:src="@mipmap/ic_launcher" />
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Registration Number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/registrationNumberEditText"
+        android:textColorHint="#FFFFFF"/>
 
 
     <RelativeLayout

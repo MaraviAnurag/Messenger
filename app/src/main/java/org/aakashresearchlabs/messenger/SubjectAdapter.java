@@ -5,7 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -39,19 +41,30 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(SubjectAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final SubjectAdapter.ViewHolder holder, int position) {
 
         final SubjectClass currentSubject=subjectList.get(position);
 
         holder.subjectName.setText(currentSubject.getSubjectName());
         holder.fileName.setText(currentSubject.getFileName());
-        //On clicking the view
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.fileThumbNail.setMaxHeight(holder.fileThumbNail.getWidth());
+        holder.downloadFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //click stuff
+                Toast.makeText(context,currentSubject.getFileURL(), Toast.LENGTH_SHORT).show();
+
             }
         });
+
+
+//        //On clicking the view
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(context,currentSubject.getFileURL(), Toast.LENGTH_SHORT).show();
+//               //click stuff
+//            }
+//        });
 
     }
 
@@ -63,12 +76,15 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
     class ViewHolder extends RecyclerView.ViewHolder{
         //Defining viewHolder
         TextView subjectName,fileName;
+        ImageView fileThumbNail,downloadFile;
 
         public ViewHolder(View itemView) {
             //finding the required views by id
             super(itemView);
             subjectName=(TextView)itemView.findViewById(R.id.subjectName);
             fileName=(TextView)itemView.findViewById(R.id.fileName);
+            fileThumbNail=(ImageView)itemView.findViewById(R.id.fileThumbNail);
+            downloadFile=(ImageView)itemView.findViewById(R.id.downloadFile);
         }
 
     }

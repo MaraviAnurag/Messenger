@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 
@@ -53,7 +54,12 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.tom_roush.pdfbox.pdmodel.PDDocument;
+import com.tom_roush.pdfbox.rendering.PDFRenderer;
+import com.tom_roush.pdfbox.util.PDFBoxResourceLoader;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -83,14 +89,16 @@ public class DocumentsFragment extends Fragment {
     String subjectNameText=null;
     private static final int FILE_REQUEST = 9002;
     private static final int REQUEST_READ_PERMISSION = 9003;
-    Uri fileURI;
+    Uri fileUri;
     private StorageReference mStorageReference;
     SubjectClass file;
     boolean ascending;
     private DatabaseReference mDatabaseReference;
     Spinner spinnerCardFilter;
     ImageView cancelUpload,thumbnail;
-
+    Bitmap pageImage;
+    File root;
+    AssetManager assetManager;
 
 
     public DocumentsFragment() {
@@ -106,11 +114,12 @@ public class DocumentsFragment extends Fragment {
         mDatabaseReference = FirebaseDatabase.getInstance().getReference();
         recyclerView=(RecyclerView)v.findViewById(R.id.recyclerview);
         //Thumbnail in the fragment which i removed for the time being
-       // thumbnail=(ImageView)v.findViewById(R.id.thumbnail);
+        thumbnail=(ImageView)v.findViewById(R.id.thumb);
 
+        setup();
         ascending=true;
         spinnerCardFilter=(Spinner)v.findViewById(R.id.spinnerCardFilter);
-        String filterOptions[] ={"Date","Name","Subject"};
+        String filterOptions[] ={"Date","Name","Subject","File Type"};
 
         ArrayAdapter spinnerAdapter=new ArrayAdapter(getActivity(),android.R.layout.simple_spinner_item,filterOptions);
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -145,7 +154,7 @@ public class DocumentsFragment extends Fragment {
                 file=dataSnapshot.getValue(SubjectClass.class);
                 fileList.add(file);
                 subjectAdapter.notifyDataSetChanged();
-                Log.i("Erroe",file.getFileName());
+                Log.i("Erroe",getExtension(file.getFileName()));
             }
 
             @Override
@@ -267,6 +276,7 @@ public class DocumentsFragment extends Fragment {
 
     void showPopUp()
     {
+        renderFile();
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View dialogLayout = inflater.inflate(R.layout.dialog_upload, null);
@@ -326,6 +336,60 @@ public class DocumentsFragment extends Fragment {
 
     }
 
+    public String getPath(Uri uri)
+    {
+        String[] projection = { MediaStore.Images.Media.DATA };
+        Cursor cursor = getActivity().getContentResolver().query(uri, projection, null, null, null);
+        if (cursor == null) return null;
+        int column_index =             cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        String s=cursor.getString(column_index);
+        cursor.close();
+        Log.i("Erroer",s);
+        return s;
+    }
+
+    private void setup() {
+        // Enable Android-style asset loading (highly recommended)
+        PDFBoxResourceLoader.init(getActivity().getApplicationContext());
+        // Find the root of the external storage.
+        root = android.os.Environment.getExternalStorageDirectory();
+        assetManager = getActivity().getAssets();
+    }
+
+    public void renderFile() {
+        // Render the page and save it to an image file
+        try {
+
+            // Load in an already created PDF
+            PDDocument document = PDDocument.load(new File(fileUri.getPath()));
+            // Create a renderer for the document
+            PDFRenderer renderer = new PDFRenderer(document);
+            // Render the image to an RGB Bitmap
+            pageImage = renderer.renderImage(0, 1, Bitmap.Config.RGB_565);
+
+            Log.i("Erroer","working");
+            // Save the render result to an image
+            String path = root.getAbsolutePath() + "/Download/render.jpg";
+            File renderFile = new File(path);
+            FileOutputStream fileOut = new FileOutputStream(renderFile);
+            pageImage.compress(Bitmap.CompressFormat.JPEG, 100, fileOut);
+            fileOut.close();
+            // Optional: display the render result on screen
+            displayRenderedImage();
+        } catch(Exception e) {
+            Log.i("Erroer","not working");
+            e.printStackTrace();
+        }
+    }
+
+    private void displayRenderedImage() {
+
+                        thumbnail.setImageBitmap(pageImage);
+                        Log.i("erroer","done");
+
+    }
+
     void loader()
     {
         //To load an imageView with the thumbnail
@@ -339,7 +403,7 @@ public class DocumentsFragment extends Fragment {
 //        }
         final StorageReference onlineStoragePhotoRef = mStorageReference.child("Files").child(file.getSubjectName()).child(file.getFileName());
         uploadCard.setVisibility(View.VISIBLE);
-     final UploadTask uploadTask=   onlineStoragePhotoRef.putFile(fileURI);
+     final UploadTask uploadTask=   onlineStoragePhotoRef.putFile(fileUri);
 
                uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -413,6 +477,8 @@ public class DocumentsFragment extends Fragment {
                     return  file1.getFileName().compareTo(file2.getFileName());
                 else if(sort=="Subject")
                     return  file1.getSubjectName().compareTo(file2.getSubjectName());
+                else if(sort=="File Type")
+                    return getExtension(file1.getFileName()).compareTo(getExtension(file2.getFileName()));
                 else
                     return  file1.getFileName().compareTo(file2.getFileName());            }
         });
@@ -423,6 +489,14 @@ public class DocumentsFragment extends Fragment {
         subjectAdapter.notifyDataSetChanged();
     }
 
+
+    public String getExtension(String s)
+    {
+        String extn="";
+        int startPostn=s.lastIndexOf('.');
+        extn=s.substring(startPostn+1,s.length());
+        return extn;
+    }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -450,8 +524,8 @@ public class DocumentsFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILE_REQUEST && resultCode == RESULT_OK && data != null) {
-            fileURI = data.getData();
-            fileNameText=getFileName(fileURI);
+            fileUri = data.getData();
+            fileNameText=getFileName(fileUri);
             showPopUp();
 
         }

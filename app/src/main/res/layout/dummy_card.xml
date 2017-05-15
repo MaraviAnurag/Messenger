@@ -13,7 +13,6 @@
        android:layout_height="wrap_content">
        <ImageView
            android:layout_width="120dp"
-           android:background="@color/colorPrimary"
            android:layout_height="120dp"
            android:id="@+id/fileThumbNail"/>
 

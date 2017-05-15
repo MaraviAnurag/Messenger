@@ -87,6 +87,12 @@
             android:id="@+id/recyclerview"/>
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/thumb"
+        android:layout_gravity="bottom"/>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/uploadFAB"
         android:layout_width="wrap_content"

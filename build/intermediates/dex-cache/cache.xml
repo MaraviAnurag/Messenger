@@ -3,21 +3,273 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        jar="C:\Users\Kevin\.android\build-cache\822e290caf248553e7e7242525166f6807dccfe5\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="68effe05d480f580b0a2636ab9022c3e459b3391">
-        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_17f826d203e9555b09611dd0d2af26a20c60e61c\classes.dex" />
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_00cf1eb8d7cc9f7e66540265524e14ff2bdb98d3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        jar="C:\Users\Kevin\.android\build-cache\4e0f686a69e57be3d551aeef1a6e714cb415c2dd\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\Users\Harshinee\AndroidStudioProjects\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_595ea290256b10f2abbdb844f7b0c404390c7dc3\classes.dex" />
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_637b5f494450bc614da153cea37420f8eae144a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\23a57caecacc865737191f90a88b0f0ccaed9a71\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41b689f01438230c8c07b12ee99e6ca288dcbbb2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\9c7d57ed99ccfb75f52bfd605ab5e784f92bec1c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ab304c913eb3aceaad45ba1a5e115ff288339b20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\6c40729eb0eac09a9b3823963d48dfa9955105df\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c6f52151d7cedcb5e07bdf28811919d40f6bd22c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\3a79f8cfa50f72aab00bb9e95a7c735a9c9d6970\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5bafa3061588442663805b4e7d885e9433d763d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\27f708614f7cac50cda053ebb89beaf5ec226068\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13fa6483b447929d54bb9ea9c7e82527cb50c5cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.gradle\caches\modules-2\files-2.1\com.madgag.spongycastle\core\1.51.0.0\f642963312ea0e615ad65f28adc5a5b3a2a0862\core-1.51.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f642963312ea0e615ad65f28adc5a5b3a2a0862">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-1.51.0.0_d296181eb8e279e21bffed065903629e847462d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\fbe24d77ac3de7d070d1505f652e6f5a01228eed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e5a16ebeeb84b0dc5420053c9f4479cceefa4805\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_2c5ba45b80653db3011dd9fb5ebe9145f9fc00ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\d95e17f316fea4ce40a2b6f3b27378c3ca8dd8f7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b9c477bef2b1458aacef5024bcc56c3c389f54f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\5fb21d7ba479fa5cc6e26395310ee721b2f68f29\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b2f6a11329bf07b82ce801dbc3e23cc87734e42b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\0537ead0982e85361f064f6193a2d2d481a2e2ba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dc6cc745ba90adc08ab65d8dbdc9f5a41b445a40\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\c97f2abe945a368fb556f58ef4305036ef750f49\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb194d1013055d020103054073a317db2f3812cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\a63cb4d48171e45422c252b157f61bf5648de6da\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_861a0af38c7d202e19d47fd341b16b9887aac27d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.gradle\caches\modules-2\files-2.1\com.madgag.spongycastle\prov\1.51.0.0\6755081df770180856ca48694b40cd34c2208128\prov-1.51.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6755081df770180856ca48694b40cd34c2208128">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\prov-1.51.0.0_2c20292766481cd2fb4840f14def9e6dc971b03c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\efd9c9ce69205df0db20bca2db37994ffb6412fa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_be89a468c916f3455298d93af4c5ddf051f709ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\242803cf51fa61b889b7c32a7d2bad4a0a64de24\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33d3c6bc4f0cf8fcbe19032e18daf0c5529c8184\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\4d87e37802156a5b6292203e3cc0bcdb311c7a5d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_06518c0256f5497c710991a65555334babca8336\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.gradle\caches\modules-2\files-2.1\com.madgag.spongycastle\pkix\1.51.0.0\40a445852ca58187fc616e3a8b42de463bf14b8b\pkix-1.51.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40a445852ca58187fc616e3a8b42de463bf14b8b">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\pkix-1.51.0.0_44bf7c9f1b7403507a40f422a996859d53fdd0f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\d77c2bb4da29c133270fd59a8d762553b37babba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_21182a884527ff954bb960dbe588bd0fdb3bb611\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\c328db84df361321b75639d102560f7b11533e3b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94fca868854457ede6df15c902938468c71d579e">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2629755c83cf41575b8b934fc66382a2fecd551\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\1b0927c56a7746e181fe028e5e2a890b660e0ab9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_055e4be286a1c727400446946db7508a54e3bfbd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\9925e2545997dc82def1d227cb4cda2fe0ea69a8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5d5404ac6a8ac3d09018be6b5625606a771eaa4f">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1a25b659166bb4b02cf067820244678ec9060c82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\80211240b427da96d6957e9cf934a6067a0838ce\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b280f83c807ed7098cb0cbb1d517395633417579\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\a1f25348edf4dcbfe5e76780428854585b12608e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2ab8e19f5151537131f98f6f755a4a4e10d061e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\89b9bb68cff37f4f49e2d3c71f2c0afcd961eda4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a48d4400ba4f70c8dffabad67cf0b0b513501020\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\f7b5442b198afbc7527179843b076186b39da7af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cda333050ca22c18f60b03e9871e748b88101658\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\5b24c910e55b02d1be8a5736661d3c1e9be5c217\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_22429d6db14a3e5de3f7fd25a88f49b2bdcd2d75\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kevin\.android\build-cache\1e99f249e0771d17de85939aded86d495593461d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\Kevin\Documents\GitHub\Messenger\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e80626ce7342476a3d414a867db611e4dfe5ad9c\classes.dex" />
     </item>
 
 </items>

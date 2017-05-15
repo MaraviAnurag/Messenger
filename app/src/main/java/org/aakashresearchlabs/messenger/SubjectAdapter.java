@@ -48,6 +48,23 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
         holder.subjectName.setText(currentSubject.getSubjectName());
         holder.fileName.setText(currentSubject.getFileName());
         holder.fileThumbNail.setMaxHeight(holder.fileThumbNail.getWidth());
+        String extn=getExtension(currentSubject.getFileName());
+        if(extn.contains("jpg")||extn.contains("jpeg"))
+            holder.fileThumbNail.setImageResource(R.drawable.jpg_icon);
+        else if(extn.contains("pdf"))
+            holder.fileThumbNail.setImageResource(R.drawable.pdf_icon);
+        else if(extn.contains("doc"))
+            holder.fileThumbNail.setImageResource(R.drawable.doc_icon);
+        else if(extn.contains("png"))
+            holder.fileThumbNail.setImageResource(R.drawable.png_icon);
+        else if(extn.contains("txt"))
+            holder.fileThumbNail.setImageResource(R.drawable.txt_icon);
+        else if(extn.contains("ppt"))
+            holder.fileThumbNail.setImageResource(R.drawable.ppt_icon);
+        else
+            holder.fileThumbNail.setImageResource(R.drawable.unknown_icon);
+
+
         holder.downloadFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,6 +104,13 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
             downloadFile=(ImageView)itemView.findViewById(R.id.downloadFile);
         }
 
+    }
+    public String getExtension(String s)
+    {
+        String extn="";
+        int startPostn=s.lastIndexOf('.');
+        extn=s.substring(startPostn+1,s.length());
+        return extn;
     }
 
 

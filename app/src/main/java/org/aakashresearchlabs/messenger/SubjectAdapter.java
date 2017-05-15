@@ -1,6 +1,8 @@
 package org.aakashresearchlabs.messenger;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,14 +76,15 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
         });
 
 
-//        //On clicking the view
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(context,currentSubject.getFileURL(), Toast.LENGTH_SHORT).show();
-//               //click stuff
-//            }
-//        });
+//         //On clicking the view
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Toast.makeText(context,currentSubject.getFileURL(), Toast.LENGTH_SHORT).show();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(currentSubject.getFileURL()));
+                context.startActivity(browserIntent);
+            }
+        });
 
     }
 
